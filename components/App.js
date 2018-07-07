@@ -30,13 +30,20 @@ var contactForm = {
 var App = React.createClass({
     render: function() {
       return (
-        React.createElement('div', {className: 'app'},
-        //odpowiednik class na elemencie HTML (np. <div class="app"></div>), className jest dla Reacta
-          React.createElement(ContactForm, {contact: contactForm}),
-          //(do komponentu ContactForm przekazujemy obiekt contactForm
-          React.createElement(Contacts, {items: contacts}, {})
-          //do komponentu Contacts przekazujemy obiekt contacts
-        )
+        <div className={'app'}>
+            <ContactForm {contact: contactForm}/>
+            <Contacts {items.contacts}/>
+        </div>
       );
     }
 });
+
+
+
+// React.createElement('div', {className: 'app'},
+//         //odpowiednik class na elemencie HTML (np. <div class="app"></div>), className jest dla Reacta
+//           React.createElement(ContactForm, {contact: contactForm}),
+//           //(do komponentu ContactForm przekazujemy obiekt contactForm
+//           React.createElement(Contacts, {items: contacts}, {})
+//           //do komponentu Contacts przekazujemy obiekt contacts
+//         )
