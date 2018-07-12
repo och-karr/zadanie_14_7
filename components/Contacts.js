@@ -2,7 +2,7 @@
 
 var Contacts = React.createClass({
     propTypes: {
-        items: React.PropTypes.array.isRequired,
+        items: React.PropTypes.string.isRequired, ////był array ale konsola mówiła że string
     },
 
     //tu używamy metody map!
