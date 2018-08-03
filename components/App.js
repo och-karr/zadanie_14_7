@@ -28,16 +28,12 @@ var contactForm = {
 };
 
 var App = React.createClass({
-    propTypes: {
-        contactForm: React.PropTypes.object.isRequired,
-        contacts: React.PropTypes.array.isRequired
-    },
 
     render: function() {
       return (
         <div className={'app'}>
-            <ContactForm contact="contactForm"/>
-            <Contacts items="contacts"/>
+            <ContactForm contact={contactForm}/>
+            <Contacts items={contacts}/>
         </div>
       );
     }

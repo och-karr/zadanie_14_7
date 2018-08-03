@@ -1,6 +1,6 @@
 var ContactForm = React.createClass({
     propTypes: {
-        contact: React.PropTypes.string.isRequired //walidacja właściwości do której
+        contact: React.PropTypes.object.isRequired //walidacja właściwości do której
         //możemy później odwołać się, dzięki this.props.contact
     }, //był object ale konsola mówiła że string
 
